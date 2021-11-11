@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El portal de las reseñas</title>
+
+    <link rel="shortcut icon" href="./img/logotipo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="headerLogo">
+        <a href="./index.html"
+          ><img src="./img/logotipo.png" alt="logotipo"
+        /></a>
+      </div>
+
+      <nav id="headerMenu">
+        <div id="menuHome">
+          <a href="./index.html">HOME</a>
+        </div>
+        <div id="menuConsejos">
+          <a href="https://www.lexico.com/grammar/top-tips-for-writing-a-review"
+            >CÓMO REDACTAR RESEÑAS</a
+          >
+        </div>
+        <div id="menuBuscador">
+          <a href="./buscador.html">BUSCADOR</a>
+        </div>
+        <div id="menuUsuario">
+          <a class="headerMenuSeleccionado" href="./usuario.html"
+            >ÁREA PRIVADA</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="tituloMain">ÁREA PRIVADA</h2>
+
+      <div id="cerrarSesion">
+        <div id="iconoCerrarSesion">
+          <img src="./img/icono_cerrar_sesion.png" alt="icono_cerrar_sesion" />
+        </div>
+        <div id="textoCerrarSesion">
+          <h4>CERRAR SESIÓN</h4>
+        </div>
+      </div>
+
+      <h3 class="subtitulo">¡Quiero crear una nueva reseña!</h3>
+
+      <div id="mainUsuario">
+        <div id="crearResenya">
+          <div class="crearResenyaInputs">
+            <input
+              type="text"
+              placeholder="Título de la reseña"
+              id="titulo_resenya"
+            />
+            <input type="text" placeholder="Nombre ítem" id="item" />
+          </div>
+          <div class="crearResenyaInputs">
+            <textarea
+              type="text"
+              placeholder="Escribe aquí tu reseña"
+              id="texto_resenya"
+              textarea
+              name="texto_resenya"
+              rows="30"
+              cols="400"
+            ></textarea>
+          </div>
+          <div class="crearResenyaInputs">
+            <select name="valoracion" id="valoracion">
+              <option value="baja">Valoración Baja</option>
+              <option value="media">Valoración Media</option>
+              <option value="alta">Valoración Alta</option>
+            </select>
+            <select name="tipo" id="tipo">
+              <option value="pelicula">Película</option>
+              <option value="serie">Serie</option>
+              <option value="videojuego">Videojuego</option>
+              <option value="otros">Otros</option>
+            </select>
+            <input type="text" placeholder="Escrito por..." id="usuario" />
+            <button class="boton" onclick="anyadir()">AÑADIR</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="fraseHome">
+        <img
+          src="./img/video-game-banner.jpg"
+          alt="imagen_videojuegos_usuario"
+        />
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer2">
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_facebook.png"
+            alt="redes_sociales_facebook"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_twitter.png"
+            alt="redes_sociales_twitter"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_youtube.png"
+            alt="redes_sociales_youtube"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_instagram.png"
+            alt="redes_sociales_instagram"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./usuario.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El portal de las reseñas</title>
+
+    <link rel="shortcut icon" href="./img/logotipo.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div id="headerLogo">
+        <a href="./index.html"
+          ><img src="./img/logotipo.png" alt="logotipo"
+        /></a>
+      </div>
+
+      <nav id="headerMenu">
+        <div id="menuHome">
+          <a href="./index.html">HOME</a>
+        </div>
+        <div id="menuConsejos">
+          <a href="https://www.lexico.com/grammar/top-tips-for-writing-a-review"
+            >CÓMO REDACTAR RESEÑAS</a
+          >
+        </div>
+        <div id="menuBuscador">
+          <a class="headerMenuSeleccionado" href="./buscador.html">BUSCADOR</a>
+        </div>
+        <div id="menuUsuario">
+          <a href="./usuario.html">ÁREA PRIVADA</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <h2 class="tituloMain">BUSCADOR</h2>
+
+      <p id="parrafoBuscador">
+        Tienes tres opciones para realizar tu búsqueda de reseñas
+      </p>
+
+      <div id="mainUsuario">
+        <div id="buscarResenya">
+          <div class="crearResenyasInput">
+            <input
+              type="text"
+              placeholder="Nombre de la película, serie o videojuego"
+              id="nombreBuscar"
+            />
+            <button class="boton" onclick="buscarNombre()">BUSCAR</button>
+          </div>
+
+          <div class="lineaSeparacion"></div>
+
+          <div class="crearResenyasInput">
+            <select name="valoracion" id="valoracion">
+              <option value="baja">Valoración Baja</option>
+              <option value="media">Valoración Media</option>
+              <option value="alta">Valoración Alta</option>
+            </select>
+            <button class="boton" onclick="buscar()">BUSCAR</button>
+          </div>
+
+          <div class="lineaSeparacion"></div>
+
+          <div class="crearResenyasInput">
+            <select name="tipo" id="datoBuscar">
+              <option value="pelicula">Película</option>
+              <option value="serie">Serie</option>
+              <option value="videojuego">Videojuego</option>
+              <option value="otros">Otros</option>
+            </select>
+            <button class="boton" onclick="buscarDato()">BUSCAR</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="mostrarResenyasBuscadas"></div>
+      <div id="fraseHome">
+        <img src="./img/banner_buscador.jpg" alt="imagen_Star_wars_buscador" />
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer2">
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_facebook.png"
+            alt="redes_sociales_facebook"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_twitter.png"
+            alt="redes_sociales_twitter"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_youtube.png"
+            alt="redes_sociales_youtube"
+          />
+        </div>
+        <div class="iconosRedesSociales">
+          <img
+            src="./img/redes_sociales_instagram.png"
+            alt="redes_sociales_instagram"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="./buscador.js"></script>
+  </body>
+</html>
